@@ -1,0 +1,40 @@
+﻿<h2>Add Player Partial view</h2>
+
+<form name="AddPlayerForm" ng-submit="AddPlayer();">
+    <table>
+        <tr>
+            <td>
+                Name :
+            </td>
+            <td>
+                <input type="text" ng-model="Player.name" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Club :
+            </td>
+            <td>
+                <input type="text" ng-model="Player.club" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Country :
+            </td>
+            <td>
+                <input type="text" ng-model="Player.country" required />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Submit" ng-disabled="AddPlayerForm.$invalid" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br />
+<br />
+
+<a href="#/">Go back</a>
